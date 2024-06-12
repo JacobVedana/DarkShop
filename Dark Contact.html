@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dark Continent Store</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #121212;
+            color: #e0e0e0;
+        }
+        header {
+            background: linear-gradient(90deg, #1f1f1f, #343434);
+            color: #f1f1f1;
+            padding: 1.5rem 0;
+            text-align: center;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+        }
+        header h1 {
+            margin: 0;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #1f1f1f;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+        }
+        nav a {
+            color: #f1f1f1;
+            padding: 1rem 2rem;
+            text-decoration: none;
+            transition: background 0.3s, color 0.3s;
+        }
+        nav a:hover {
+            background-color: #343434;
+            color: #ffffff;
+        }
+        .container {
+            padding: 2rem;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+        .card {
+            background-color: #1e1e1e;
+            border: 1px solid #444;
+            border-radius: 8px;
+            padding: 1rem;
+            margin-bottom: 1.5rem;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        ul li {
+            margin-bottom: 0.5rem;
+        }
+        .product-card {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            border: 1px solid #444;
+            border-radius: 8px;
+            margin-bottom: 1.5rem;
+        }
+        .product-details {
+            background-color: #1e1e1e;
+            padding: 1rem;
+            border-radius: 8px;
+            width: 100%;
+            text-align: center;
+        }
+        .product-card img {
+            max-width: 100%;
+            border-radius: 8px;
+            margin-bottom: 1rem;
+        }
+        .product-card h3 {
+            margin: 0;
+            margin-bottom: 0.5rem;
+        }
+        .product-card p {
+            margin: 0;
+            margin-bottom: 0.5rem;
+        }
+        .btn-panel {
+            margin-top: 1rem;
+        }
+        .btn-panel button {
+            background-color: #4caf50;
+            color: #fff;
+            border: none;
+            padding: 0.5rem 1rem;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+        .btn-panel button:hover {
+            background-color: #45a049;
+        }
+        .additional-info {
+            background-color: #2a2a2a;
+            padding: 1rem;
+            border-radius: 8px;
+            display: none;
+            text-align: center;
+            width: 100%;
+        }
+    </style>
+    <script>
+        function toggleInfo(id) {
+            var element = document.getElementById(id);
+            if (element.style.display === "none") {
+                element.style.display = "block";
+            } else {
+                element.style.display = "none";
+            }
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <h1>Dark Continent Contact</h1>
+    </header>
+    <nav>
+        <a href="Dark Home.html">Home</a>
+        <a href="Dark Bundle.html">Store</a>
+    </nav>
+     <div class="card product-card">
+       <div class="product-details">
+        <section id="contact">
+            <h3>Contact:</h3>
+            <p>Gcash: 0918-748-3726</p>
+            <p>Fb: Jacob Santos Vedana</p>
+            <p>Discord: zeus8165</p>
+            <b><p style="color:green;">PM me if you are interested :></p></b>
+        </section>
+        <section id="store">
+            <h2>Categories</h2>
+            <div class="card product-card">
+                <div class="product-details">
+                    <img src='images (1) (3).jpeg' alt='200' width='200' height='200'>
+                    <h3><p style="color:orange;">Crate Shop</p></h3>
+                </div>
+                <div class="btn-panel">
+                    <button><a href="Dark Crate.html" >More Info</a></button>
+                </div>
+              
+            </div>
+            <div class="card product-card">
+                <div class="product-details">
+                    <img src='images (1) (1).jpeg' alt='200' width='200' height='200'>
+                    <h3><p style="color:orange;">Bundle Shop</p></h3>
+                </div>
+                <div class="btn-panel">
+                    <button><a href="Dark Bundle.html" >More Info</a></button>
+                </div>
+              
+            </div>
+            <div class="card product-card">
+                <div class="product-details">
+                    <img src='download (1).jpeg' alt='200' width='200' height='200'>
+                    <h3><p style="color:orange;">Boss Shop</p></h3>
+                </div>
+                <div class="btn-panel">
+                    <button><a href="Dark Egg.html" >More Info</a></button> 
+                </div>
+              
+            </div>
+            <div class="card product-card">
+                <div class="product-details">
+                    <img src='images (1) (2).jpeg' alt='200' width='200' height='200'>
+                    <h3><p style="color:orange;">Rank Shop</p></h3>
+                </div>
+                <div class="btn-panel">
+                    <button><a href="Dark Rank.html" >More Info</a></button> 
+                </div>
+              
+        </section>
+    </div>
+    <footer></footer>
+</body>
+</html>
